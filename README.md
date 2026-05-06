@@ -1,20 +1,41 @@
-# [Multi-View Contrastive Learning for Robust Domain Adaptation in Medical Time Series Analysis](https://arxiv.org/abs/2506.22393)
+# Multi-View Contrastive Learning for Robust Domain Adaptation in Medical Time Series Analysis
 
-YongKyung Oh and Alex Bui. Multi-View Contrastive Learning for Robust Domain Adaptation in Medical Time Series Analysis. Proceedings of the sixth Conference on Health, Inference, and Learning (CHIL 2025), volume 287, pages 502–526, Proceedings of Machine Learning Research, 2025. PMLR, **Models & Methods Track - Best Paper Award**, [https://proceedings.mlr.press/v287/oh25a.html](https://proceedings.mlr.press/v287/oh25a.html)
+**CHIL 2025 Models & Methods Track - Best Paper Award**
 
-> Adapting machine learning models to medical time series across different domains remains a challenge due to complex temporal dependencies and dynamic distribution shifts. Current approaches often focus on isolated feature representations, limiting their ability to fully capture the intricate temporal dynamics necessary for robust domain adaptation. In this work, we propose a novel framework leveraging multi-view contrastive learning to integrate temporal patterns, derivative-based dynamics, and frequency-domain features. Our method employs independent encoders and a hierarchical fusion mechanism to learn feature-invariant representations that are transferable across domains while preserving temporal coherence. Extensive experiments on diverse medical datasets, including electroencephalogram (EEG), electrocardiogram (ECG), and electromyography (EMG) demonstrate that our approach significantly outperforms state-of-the-art methods in transfer learning tasks. By advancing the robustness and generalizability of machine learning models, our framework offers a practical pathway for deploying reliable AI systems in diverse healthcare settings. 
+[Paper](https://proceedings.mlr.press/v287/oh25a.html) |
+[arXiv](https://arxiv.org/abs/2506.22393) |
+[Poster](https://drive.google.com/file/d/1jROcBGxbZ7dpzwBkzSl3VaoHUnL0LqhJ/view) |
+[Overview PDF](assets/figures/overview.pdf)
 
+![Overview of the proposed multi-view contrastive learning framework](assets/figures/overview.png)
 
-## Reference
+## Overview
+
+This repository contains the official implementation of **Multi-View Contrastive Learning for Robust Domain Adaptation in Medical Time Series Analysis**. The framework adapts medical time-series models across source and target domains by learning complementary temporal, derivative, and frequency-domain representations.
+
+The model uses view-specific Transformer encoders, multi-head attention for hierarchical feature interaction, and contrastive pre-training on a source domain before target-domain fine-tuning. Experiments cover diverse medical time-series modalities, including EEG, ECG, and EMG.
+
+## Repository Structure
+
+- `data_preprocess.py`: preprocesses time-series datasets into the expected serialized format.
+- `run_pretrain.py`: pre-trains the multi-view encoder with the contrastive objective.
+- `run_finetune.py`: fine-tunes and evaluates the pre-trained encoder on target-domain tasks.
+- `src/`: model, data loading, training, evaluation, configuration, and utility modules.
+
+## Citation
+
+If you find this repository useful, please cite:
+
 ```bibtex
 @inproceedings{oh_multi-view_2025,
-	title        = {Multi-{View} {Contrastive} {Learning} for {Robust} {Domain} {Adaptation} in {Medical} {Time} {Series} {Analysis}},
 	author       = {Oh, YongKyung and Bui, Alex},
-	year         = 2025,
+	title        = {Multi-{View} {Contrastive} {Learning} for {Robust} {Domain} {Adaptation} in {Medical} {Time} {Series} {Analysis}},
 	booktitle    = {Proceedings of the sixth {Conference} on {Health}, {Inference}, and {Learning}},
-	publisher    = {PMLR},
-	address      = {Proceedings of Machine Learning Research},
 	volume       = 287,
 	pages        = {502--526},
+	publisher    = {PMLR},
+	address      = {Proceedings of Machine Learning Research},
+	year         = 2025,
+	editor       = {Xu, Xuhai Orson and Choi, Edward and Singhal, Pankhuri and Gerych, Walter and Tang, Shengpu and Agrawal, Monica and Subbaswamy, Adarsh and Sizikova, Elena and Dunn, Jessilyn and Daneshjou, Roxana and Sarker, Tasmie and McDermott, Matthew and Chen, Irene}
 }
 ```
