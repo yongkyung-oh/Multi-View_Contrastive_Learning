@@ -24,7 +24,7 @@ The model uses view-specific Transformer encoders, multi-head attention for hier
 
 ## Citation
 
-If you find this repository useful, please cite:
+If you find this repository useful, please cite the official PMLR version. Paper: [PMLR v287 (CHIL 2025), pp. 502-526](https://proceedings.mlr.press/v287/oh25a.html) · arXiv: [arXiv:2506.22393](https://arxiv.org/abs/2506.22393)
 
 ```bibtex
 @inproceedings{oh_multi-view_2025,
