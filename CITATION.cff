@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Multi-View Contrastive Learning for Robust Domain Adaptation in Medical Time Series Analysis"
+type: software
+authors:
+  - family-names: Oh
+    given-names: YongKyung
+  - family-names: Bui
+    given-names: Alex
+repository-code: "https://github.com/yongkyung-oh/Multi-View_Contrastive_Learning"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Multi-View Contrastive Learning for Robust Domain Adaptation in Medical Time Series Analysis"
+  authors:
+    - family-names: Oh
+      given-names: YongKyung
+    - family-names: Bui
+      given-names: Alex
+  editors:
+    - family-names: Xu
+      given-names: Xuhai Orson
+    - family-names: Choi
+      given-names: Edward
+    - family-names: Singhal
+      given-names: Pankhuri
+    - family-names: Gerych
+      given-names: Walter
+    - family-names: Tang
+      given-names: Shengpu
+    - family-names: Agrawal
+      given-names: Monica
+    - family-names: Subbaswamy
+      given-names: Adarsh
+    - family-names: Sizikova
+      given-names: Elena
+    - family-names: Dunn
+      given-names: Jessilyn
+    - family-names: Daneshjou
+      given-names: Roxana
+    - family-names: Sarker
+      given-names: Tasmie
+    - family-names: McDermott
+      given-names: Matthew
+    - family-names: Chen
+      given-names: Irene
+  collection-title: "Proceedings of the sixth Conference on Health, Inference, and Learning"
+  collection-type: proceedings
+  conference:
+    name: "Conference on Health, Inference, and Learning"
+  volume: 287
+  start: "502"
+  end: "526"
+  year: 2025
+  month: 6
+  publisher:
+    name: PMLR
+  issn: "2640-3498"
+  url: "https://proceedings.mlr.press/v287/oh25a.html"
+  identifiers:
+    - type: other
+      value: "arXiv:2506.22393"
+      description: "arXiv preprint identifier"
