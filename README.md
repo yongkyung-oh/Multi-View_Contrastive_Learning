@@ -9,6 +9,10 @@
 
 ![Overview of the proposed multi-view contrastive learning framework](assets/figures/overview.png)
 
+## Abstract
+
+Adapting machine learning models to medical time series across domains is challenging because temporal dependencies and dynamic distribution shifts can degrade transfer performance. This paper introduces a multi-view contrastive learning framework that integrates temporal patterns, derivative-based dynamics, and frequency-domain features. The method uses independent encoders with hierarchical fusion to learn transferable representations that preserve temporal coherence across domains. Experiments evaluate the framework on diverse medical time-series modalities, including EEG, ECG, and EMG.
+
 ## Overview
 
 This repository contains the official implementation of **Multi-View Contrastive Learning for Robust Domain Adaptation in Medical Time Series Analysis**. The framework adapts medical time-series models across source and target domains by learning complementary temporal, derivative, and frequency-domain representations.
