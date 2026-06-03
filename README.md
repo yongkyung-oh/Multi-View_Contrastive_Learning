@@ -42,7 +42,9 @@ If you find this repository useful, please cite the official PMLR version. Paper
 	year         = 2025,
 	editor       = {Xu, Xuhai Orson and Choi, Edward and Singhal, Pankhuri and Gerych, Walter and Tang, Shengpu and Agrawal, Monica and Subbaswamy, Adarsh and Sizikova, Elena and Dunn, Jessilyn and Daneshjou, Roxana and Sarker, Tasmie and McDermott, Matthew and Chen, Irene}
 }
+```
 
+```bibtex
 @misc{oh_multi-view_2025_arxiv,
 	author       = {Oh, YongKyung and Bui, Alex},
 	title        = {Multi-{View} {Contrastive} {Learning} for {Robust} {Domain} {Adaptation} in {Medical} {Time} {Series} {Analysis}},
